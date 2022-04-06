@@ -1,0 +1,17 @@
+<!--pages/comment/comment.wxml-->
+
+<view class="movie-box">
+  <image class="movie-img" src="{{movieInfo.cover}}"></image>
+  <view class="movie-info">
+    <view class="movie-title">{{movieInfo.title}}</view>
+    <view class="movie-rate-title">观众评分：<text class="movie-rate">{{movieInfo.rate}}</text></view>
+  </view>
+</view>
+<view>
+  <van-cell-group>
+    <van-field value="{{ content }}" placeholder="请输入评价" border="{{ true }}" bind:change="onContentChange" />
+  </van-cell-group>
+  <image class="img-list" src="{{item}}" wx:for="{{images}}" wx:key="{{index}}"></image>
+  <van-button type="warning" bindtap="uploadImage">上传图片</van-button>
+  <van-button type="danger" bindtap="submit">提交</van-button>
+</view>

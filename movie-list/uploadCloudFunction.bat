@@ -1,0 +1,1 @@
+"D:\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-0gkn0zlue02a0392 --n quickstartFunctions --r --project "D:\Wechat小程序开发\movie-list" --report_first --report
